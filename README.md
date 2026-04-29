@@ -1,76 +1,18 @@
-# 🚀 Guia de Referência: PHP, Laravel & Fullstack
+# 📂 Minha Organização de Trabalho & Setup Dev
 
-Este guia contém os comandos e configurações essenciais que utilizo no meu dia a dia como desenvolvedor PHP. Ideal para configuração rápida de ambiente e consulta de comandos frequentes.
+Bem-vindo ao meu repositório de organização técnica. Como desenvolvedor com 9 anos de experiência, acredito que a eficiência começa com um ambiente de trabalho bem estruturado.
 
----
+## 🎯 Objetivo deste Projeto
+Este repositório serve para documentar e expor minha metodologia de trabalho, organização de ferramentas e configurações que utilizo para manter alta produtividade em projetos complexos, como sistemas de ERP.
 
-## 🛠️ Configurações VS Code
+## 💻 Estrutura de Perfis (VS Code)
+Utilizo perfis isolados para garantir que cada stack tenha apenas as ferramentas necessárias, mantendo o editor rápido e organizado:
 
-Para manter o código limpo e organizado, utilizo as seguintes configurações:
-
-*   **Extensão Base:** PHP Intelephense
-*   **Format on Save:** Ativado (`Ctrl + ,` -> "Format On Save")
-*   **Formatador Padrão:** Intelephense (ou PHP CS Fixer)
-*   **Atalhos Úteis:**
-    *   `Ctrl + Shift + P`: Paleta de comandos.
-    *   `Alt + Shift + F`: Formatar documento manualmente.
-    *   `F2`: Renomear símbolos (variáveis/métodos) em todo o projeto.
-    *   `Ctrl + P`: Busca rápida de arquivos.
+*   **PHP & Laravel Fullstack (Arquitetura de ERP)**: Este setup é a base do meu projeto autoral focado na criação de um ecossistema ERP. O objetivo aqui é validar a arquitetura técnica e modelar regras de negócio    essenciais (Entrada, Estoque, Saída, Financeiro e Produção), servindo como um laboratório vivo para novas ideias e possíveis parcerias ou sociedades.
+    *   [Acesse o Guia Detalhado aqui](./PHP-Laravel.md)
+*   **JavaScript & Node.js**: Ambiente focado nos meus estudos atuais de Backend com Node, incluindo ferramentas para NPM e depuração.
+*   **Python & Data**: Configurações para scripts de automação e manipulação de dados.
+*   **Java**: Setup para análise e manutenção de sistemas legados ou novos serviços.
 
 ---
-
-## 🐘 PHP & Composer
-
-Gerenciamento de dependências e ambiente PHP.
-
-
-| Comando | Descrição |
-| :--- | :--- |
-| `composer install` | Instala dependências do `composer.json`. |
-| `composer update` | Atualiza as bibliotecas para a última versão permitida. |
-| `composer require <pacote>` | Adiciona uma nova biblioteca ao projeto. |
-| `composer dump-autoload` | Recarrega o mapa de classes (útil se uma classe nova não for encontrada). |
-
----
-
-## 🔥 Laravel Artisan
-
-Os comandos de "mão na massa" do framework.
-
-*   **Servidor:** `php artisan serve` (Inicia o servidor local).
-*   **Banco de Dados:**
-    *   `php artisan migrate`: Executa as migrações.
-    *   `php artisan migrate:rollback`: Volta a última migração.
-    *   `php artisan migrate:fresh --seed`: Apaga tudo, recria e popula o banco.
-*   **Criação (Make):**
-    *   `php artisan make:controller NomeController`: Cria um controlador.
-    *   `php artisan make:model Nome -m`: Cria o Model e o arquivo de Migration.
-    *   `php artisan make:request NomeRequest`: Cria validação de formulário.
-*   **Cache:** `php artisan optimize:clear` (Limpa cache de rotas, views e config).
-
----
-
-## 📦 NPM (Front-end)
-
-Para projetos com Vite, Mix, Vue ou React.
-
-*   `npm install`: Instala os pacotes do `package.json`.
-*   `npm run dev`: Inicia o servidor de assets (Vite) para desenvolvimento.
-*   `npm run build`: Compila os arquivos para produção (minificados).
-
----
-
-## 🌿 Git (Versionamento)
-
-*   `git checkout -b nome-da-branch`: Cria e muda para uma nova branch.
-*   `git add .`: Adiciona todas as mudanças para o commit.
-*   `git commit -m "mensagem"`: Grava as alterações.
-*   `git pull origin main`: Atualiza seu código local com o servidor.
-*   `git push origin sua-branch`: Envia suas alterações para o repositório remoto.
-*   `git status`: Verifica o que foi alterado.
-
----
-
-## 💡 Dicas Extras
-
-> **Dica de Ouro:** Sempre verifique o arquivo `.env` antes de rodar as migrações do Laravel para garantir que a conexão com o banco de dados está correta.
+*Este é um projeto de portfólio para demonstrar meu workflow profissional.*
